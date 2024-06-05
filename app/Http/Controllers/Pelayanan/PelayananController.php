@@ -26,7 +26,7 @@ class PelayananController extends Controller
 
     public function save(SavePelayananRequest $r){
         if($r->validated()){
-           Pelayanan::created([
+           Pelayanan::create([
                 'jenis_pelayanan' => $r->jenis_pelayanan,
                 'id_pasien' => $r->id_pasien,
                 'id_dokter' => $r->id_dokter,

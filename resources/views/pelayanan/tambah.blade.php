@@ -11,8 +11,8 @@
                     <label class="mb-2 uppercase font-bold text-xs text-grey-darkest" for="first_name">Nama Pasien</label>
                     <select class="border py-2 px-3 text-grey-darkest rounded-md" name="id_pasien" id="">
                         <option value="">--Pilih Nama Pasien--</option>
-                        @foreach ($pasien as $p)
-                        <option value="{{$p->id}}">{{$p->nama_pasien}}</option>
+                        @foreach ($pasien as $a)
+                        <option value="{{$a->id}}">{{$a->nama_pasien}}</option>
                         @endforeach
                     </select>
                     <span>{{$errors->first('nama_pasien')}}</span>
@@ -26,8 +26,8 @@
                     <label class="mb-2 uppercase font-bold text-xs text-grey-darkest" for="first_name">Nama dokter</label>
                     <select class="border py-2 px-3 text-grey-darkest rounded-md" name="id_dokter" id="">
                         <option value="">--Pilih Nama Dokter--</option>
-                        @foreach ($dokter as $d)
-                        <option value="{{$d->id}}">{{$d->nama_dokter}}</option>
+                        @foreach ($dokter as $o)
+                        <option value="{{$o->id}}">{{$o->nama_dokter}}</option>
                         @endforeach
                     </select>
                     <span>{{$errors->first('nama_dokter')}}</span>

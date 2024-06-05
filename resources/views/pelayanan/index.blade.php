@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <div class="flex justify-between">
-        <div class="text-xl font-bold">Data Dokter</div>
+        <div class="text-xl font-bold">Data Pelayanan</div>
         <div>
             <a href="{{route('pelayanan.tambah')}}" class="bg-green-600 hover:bg-green-300 text-white p-2 border rounded-md">Tambah
                 Data</a>
